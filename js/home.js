@@ -35,6 +35,29 @@
 		   refreshInterval: 50
 		   })
 		   });
+			 /* Smooth Scroll */
+		$('a.smoth-scroll').on("click", function (e) {
+		    var anchor = $(this);
+		    $('html, body').stop().animate({
+		        scrollTop: $(anchor.attr('href')).offset().top - 50
+		    }, 3000);
+		    e.preventDefault();
+		});
+		/* Scroll To Top */
+				$(window).scroll(function () {
+					if ($(this).scrollTop() >= 500) {
+						$('.scroll-to-top').fadeIn();
+					} else {
+						$('.scroll-to-top').fadeOut();
+					}
+				});
+				$('.scroll-to-top').click(function () {
+					$('html, body').animate({
+						scrollTop: 0
+					}, 800);
+					return false;
+				});
+
 	});
 
 })(jQuery);

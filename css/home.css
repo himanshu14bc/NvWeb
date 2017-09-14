@@ -52,10 +52,10 @@ a:focus {
 	outline: none;
 	text-decoration: none;
 }
-
-p {
+/*nv-overwrite*/
+/*p {
 	line-height: 32px;
-}
+}*/
 
 ul,
 li {
@@ -113,8 +113,8 @@ display: block;
 }
 .navigation-menu .navbar-nav li a {
 	color: #333;
-	text-transform: uppercase;
-	font-size: 12px;
+	text-transform: capitalize;
+	font-size: 0.85em;
 	letter-spacing: 1px;
 	padding: 30px 15px;
 	-webkit-transition: .3s;
