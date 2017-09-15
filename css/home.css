@@ -97,7 +97,7 @@ display: block;
 	padding: 0 0 12px;
 }
 .custom-hover-effects a::after {
-	background-color: #ff8000;
+	background-color: #325c80;
 	content: "";
 	height: 3px;
 	width: 100%;

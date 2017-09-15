@@ -45,7 +45,7 @@
 		});
 		// Script to control capabilities carousel
 		$("#clients-logo").owlCarousel({
-			autoPlay: 3000,
+			autoPlay: false,
 			items: 3,
 			itemsDesktop: [1199, 3],
 			itemsDesktopSmall: [979, 3],
