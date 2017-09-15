@@ -18,11 +18,11 @@
       <!-- All CSS Plugins -->
       <link href="css/bootstrap.min.css" rel="stylesheet">
       <link href="css/font-awesome.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/owl.carousel.css">
       <!-- Main CSS Stylesheet -->
       <link rel="stylesheet" type="text/css" href="css/main.css">
       <link rel="stylesheet" type="text/css" href="css/home.css">
       <link rel="stylesheet" type="text/css" href="css/responsive.css">
-
       <!-- Google Web Fonts  -->
       <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
       <!-- HTML5 shiv and Respond.js support IE8 or Older for HTML5 elements and media queries -->
@@ -31,120 +31,133 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
       <style media="screen">
-      /* Scroll To Top */
-
-.scroll-to-top {
-background-color: #ff8800;
-display: none;
-width: 50px;
-height: 50px;
-font-size: 25px;
-line-height: 50px;
-text-align: center;
-color: #fff;
-position: fixed;
-right: 0px;
-bottom: 50px;
-z-index: 999;
-}
-
-.scroll-to-top:hover,
-.scroll-to-top:focus {
-background-color: #ff8800;
-color: #ffffff;
-}
-
-/* Services */
-
-.services-section {
-  background-color: #F9F9F9;
-  padding: 2em;
-}
-
-.services-section hr {
-  border-bottom: 2px solid #ff9800;
-  width: 20%;
-  margin-top: 0.5em;
-margin-bottom: 0.5em;
-}
-
-.services-section .services-detail {
-  border-radius: 4px;
-  border-bottom-right-radius: 14%;
-  background-color: #ffffff;
-  box-shadow: 0px 1px 2px 0px rgba(90, 91, 95, 0.15);
-  transition: all 0.3s ease-in-out;
-  position: relative;
-  top: 0px;
-  padding: 1em;
-  margin-top: 32px;
-      min-height: 495px;
-}
-
-.services-section .services-detail:hover {
-  border-bottom-right-radius: 4px;
-  box-shadow: 0px 16px 22px 0px rgba(90, 91, 95, 0.3);
-  top: -5px;
-}
-
-.services-section .services-detail .fa {
-    font-size: 0.9em;
-}
-.testimonial-image img {
-    max-width: 115px;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-}
-.testimonial-image {
-    text-align: center;
-}
-.date {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #08a6f3;
-    color: #fff;
-    padding: 0.2em;
-}
-.date .day {
-    font-weight: 700;
-    font-size: 24px;
-    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.18);
-}
-
-.date span {
-    display: block;
-    text-align: center;
-}
-.date .month, .example-1 .date .year {
-    font-size: 12px;
-}
-.date .month {
-    text-transform: uppercase;
-}
-.date .month, .example-1 .date .year {
-    font-size: 12px;
-}
-.section-title h2 {
-font-weight: 400;
-font-size: 1.5em;
-margin: 0 auto;
-border-left: 3px solid #2196F3;
-border-right: 3px solid #2196F3;
-width: 42%;
-text-align: center;
-}
-.rating{
+         /* Scroll To Top */
+         .scroll-to-top {
+         background-color: #ff8800;
+         display: none;
+         width: 50px;
+         height: 50px;
+         font-size: 25px;
+         line-height: 50px;
+         text-align: center;
+         color: #fff;
+         position: fixed;
+         right: 0px;
+         bottom: 50px;
+         z-index: 999;
+         }
+         .scroll-to-top:hover,
+         .scroll-to-top:focus {
+         background-color: #ff8800;
+         color: #ffffff;
+         }
+         /* Services */
+         .services-section {
+         background-color: #F9F9F9;
+         padding: 2em;
+         }
+         .services-section hr {
+         border-bottom: 2px solid #ff9800;
+         width: 20%;
+         margin-top: 0.5em;
+         margin-bottom: 0.5em;
+         }
+         .services-section .services-detail {
+         border-radius: 4px;
+         border-bottom-right-radius: 14%;
+         background-color: #ffffff;
+         box-shadow: 0px 1px 2px 0px rgba(90, 91, 95, 0.15);
+         transition: all 0.3s ease-in-out;
+         position: relative;
+         top: 0px;
+         padding: 1em;
+         margin-top: 32px;
+         min-height: 495px;
+         margin-right: 0.95em;
+         margin-bottom: 1em;
+         }
+         .services-section .services-detail:hover {
+         border-bottom-right-radius: 4px;
+         box-shadow: 0px 16px 22px 0px rgba(90, 91, 95, 0.3);
+         top: -5px;
+         }
+         .services-section .services-detail .fa {
+         font-size: 0.9em;
+         }
+         .testimonial-image img {
+         max-width: 115px;
+         -moz-border-radius: 50%;
+         -webkit-border-radius: 50%;
+         border-radius: 50%;
+         }
+         .testimonial-image {
+         text-align: center;
+         }
+         .date {
+         position: absolute;
+         top: 0;
+         left: 0;
+         background-color: #08a6f3;
+         color: #fff;
+         padding: 0.2em;
+         }
+         .date .day {
+         font-weight: 700;
+         font-size: 24px;
+         text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.18);
+         }
+         .date span {
+         display: block;
+         text-align: center;
+         }
+         .date .month, .example-1 .date .year {
+         font-size: 12px;
+         }
+         .date .month {
+         text-transform: uppercase;
+         }
+         .date .month, .example-1 .date .year {
+         font-size: 12px;
+         }
+         .section-title h2 {
+         font-weight: 400;
+         font-size: 1.5em;
+         margin: 0 auto;
+         border-left: 3px solid #2196F3;
+         border-right: 3px solid #2196F3;
+         width: 42%;
+         text-align: center;
+         }
+         .rating{
+         text-align: center;
+         }
+         .services-section .rating .fa {
+         color: #ff9800;
+         }
+         .nv-quote-color{
+         color:#ff9800;
+         }
+        .uppercase{
+          text-transform: uppercase;
+        }
+        .owl-theme .owl-controls{margin-top:10px;text-align:center;}
+.owl-theme .owl-controls .owl-buttons div{color:#FFF;display:inline-block;zoom:1;*display:inline;margin:5px;padding:3px 10px;font-size:12px;-webkit-border-radius:30px;-moz-border-radius:30px;border-radius:30px;background:#2196F3;filter:Alpha(Opacity=50);opacity:0.5;}
+.owl-theme .owl-controls.clickable .owl-buttons div:hover{filter:Alpha(Opacity=100);opacity:1;text-decoration:none;}
+.owl-theme .owl-controls .owl-page{display:inline-block;zoom:1;*display:inline;}
+.owl-theme .owl-controls .owl-page span{display:block;width:12px;height:12px;margin:5px 7px;filter:Alpha(Opacity=50);opacity:0.5;-webkit-border-radius:20px;-moz-border-radius:20px;border-radius:20px;background:#2196F3;}
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{filter:Alpha(Opacity=100);opacity:1;}
+.owl-theme .owl-controls .owl-page span.owl-numbers{height:auto;width:auto;color:#FFF;padding:2px 10px;font-size:12px;-webkit-border-radius:30px;-moz-border-radius:30px;border-radius:30px;}
+.owl-item.loading{min-height:150px;background:url(AjaxLoader.gif) no-repeat center center}
+.nv-accreditations{
+  font-weight: 400;
+  margin: 1em;
+  border-left: 3px solid #2196F3;
+    border-right: 3px solid #2196F3;
   text-align: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
-.services-section .rating .fa {
-  color: #ff9800;
-}
-.nv-quote-color{
-  color:#ff9800;
-}
-
       </style>
    </head>
    <body>
@@ -153,12 +166,12 @@ text-align: center;
          <div class="header-top-area navigation-background">
             <div class="container">
                <div class="row">
-                  <div class="col-sm-3">
+                  <div class="col-sm-1">
                      <div class="logo">
                         <a href="index.html">NovelVista</a>
                      </div>
                   </div>
-                  <div class="col-sm-9">
+                  <div class="col-sm-11">
                      <div class="navigation-menu">
                         <div class="navbar custom-hover custom-hover-effects">
                            <div class="navbar-header">
@@ -172,12 +185,10 @@ text-align: center;
                            <div class="navbar-collapse collapse">
                               <ul class="nav navbar-nav navbar-right">
                                  <li class="active">
-                                    <a class="smoth-scroll" href="index.html">
-                                       Home
+                                    <a class="smoth-scroll" href="#action">
+                                       Accreditations
                                        <div class="ripple-wrapper"></div>
                                     </a>
-                                 </li>
-                                 <li><a class="smoth-scroll" href="#">Accreditations</a>
                                  </li>
                                  <li><a class="smoth-scroll" href="#">Course Overview</a>
                                  </li>
@@ -218,7 +229,7 @@ text-align: center;
                         <li><i class="fa fa-file color-6" aria-hidden="true" style="padding-right: 3px;"></i><span class="nv-bullet-points">Sample Papers &#38; Mock Exam</span></li>
                      </ul>
                   </div>
-                  <div class="live-preview">
+                  <div class="live-preview" style="padding-top: 2em;">
                      <a href="#" class="btn btn-common">Call Us Now</a>
                   </div>
                </div>
@@ -228,7 +239,7 @@ text-align: center;
             </div>
             <!-- statistics -->
             <div class="row">
-               <div class="statistics-center">
+               <div class="statistics-center" style="padding-top: 2em;">
                   <div class="col-md-3 col-sm-6">
                      <div class="statistics">
                         <div class="statistics-icon"><i class="fa fa-check-square-o color-1"></i>
@@ -273,166 +284,116 @@ text-align: center;
             </div>
          </div>
       </section>
-      <section id="action" class="responsive">
-              <div class="vertical-center">
-                   <div class="container">
-                      <div class="row">
-                          <div class="action take-tour">
-                              <div class="col-sm-7 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                                  <h1 class="title">Accreditations</h1>
-                                  <p>A responsive, retina-ready &amp; wide multipurpose template.</p>
-                              </div>
-                              <div class="col-sm-5 text-center wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                                  <div class="tour-button">
-                                      <a href="#" class="btn btn-common">Client logos</a>
-                                   </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </section>
-
-      <!-- <section id="services">
+      <section id="action" class="responsive" style="padding-top: 4em;padding-bottom: 3em;">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
-                    <div class="single-service">
-                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="300ms">
-                            <img src="images/home/icon1.png" alt="">
-                        </div>
-                        <h2>Incredibly Responsive</h2>
-                        <p>Ground round tenderloin flank shank ribeye. Hamkevin meatball swine. Cow shankle beef sirloin chicken ground round.</p>
+              <div class="row">
+                 <div class="col-sm-12">
+                    <div class="section-title" style="padding-bottom: 2em;">
+                       <h2 class="uppercase" style="font-size:1.5em;">Our Accreditations</h2>
                     </div>
-                </div>
-                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
-                    <div class="single-service">
-                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="600ms">
-                            <img src="images/home/icon2.png" alt="">
-                        </div>
-                        <h2>Superior Typography</h2>
-                        <p>Hamburger ribeye drumstick turkey, strip steak sausage ground round shank pastrami beef brisket pancetta venison.</p>
-                    </div>
-                </div>
-                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">
-                    <div class="single-service">
-                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="900ms">
-                            <img src="images/home/icon3.png" alt="">
-                        </div>
-                        <h2>Swift Page Builder</h2>
-                        <p>Venison tongue, salami corned beef ball tip meatloaf bacon. Fatback pork belly bresaola tenderloin bone pork kevin shankle.</p>
-                    </div>
-                </div>
-
-                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
-                    <div class="single-service">
-                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="300ms">
-                            <img src="images/services/1.png" alt="">
-                        </div>
-                        <h2>Incredibly Responsive</h2>
-                        <p>Ground round tenderloin flank shank ribeye. Hamkevin meatball swine. Cow shankle beef sirloin chicken ground round.</p>
-                    </div>
-                </div>
-                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
-                    <div class="single-service">
-                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="600ms">
-                            <img src="images/services/2.png" alt="">
-                        </div>
-                        <h2>Superior Typography</h2>
-                        <p>Hamburger ribeye drumstick turkey, strip steak sausage ground round shank pastrami beef brisket pancetta venison.</p>
-                    </div>
-                </div>
-                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">
-                    <div class="single-service">
-                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="900ms">
-                            <img src="images/services/3.png" alt="">
-                        </div>
-                        <h2>Swift Page Builder</h2>
-                        <p>Venison tongue, salami corned beef ball tip meatloaf bacon. Fatback pork belly bresaola tenderloin bone pork kevin shankle.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-   <!-- Services Start -->
-   <section id="services" class="services-section section-space-padding">
-       <div class="container">
-          <div class="row">
-               <div class="col-sm-12">
-                   <div class="section-title">
-                       <h2>WHAT PEOPLE SAY ABOUT US</h2>
-                   </div>
+                 </div>
+              </div>
+               <div class="row">
+                  <div class="col-sm-12">
+                     <div class="col-sm-4 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <img src="images/clients/exin-aec.jpg" class="img-responsive" alt="Accredited by EXIN">
+                     </div>
+                     <div class="col-sm-4 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <img src="images/clients/itil-ato.jpg" class="img-responsive" alt="Accredited by Axelos">
+                     </div>
+                     <div class="col-sm-4 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+                      <img src="images/clients/PRINCE2-ATO.jpg" class="img-responsive" alt="Accredited by Axelos">
+                     </div>
+                  </div>
                </div>
-           </div>
+            </div>
 
-     <div class="row">
-
-           <div class="col-md-4 col-sm-6">
-       <div class="services-detail">
-         <div class="date">
-        <span class="day">1</span>
-        <span class="month">Aug</span>
-        <span class="year">2017</span>
-      </div>
-         <div class="testimonial-image">
-	             <img src="images/clients/1.jpg" alt="t2">
-	        </div>
-         <h3 style="text-align:center;font-size: 1.2em;margin-bottom: 0;margin-top: 0.4em;">Arun Sankar</h3>
-         <div class="rating">
-<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
-</div>
-         <hr style="color:ff9800">
-         <p style="font-size: 0.8em;font-weight: 500;text-align: justify;line-height: 1.5em;"><i class="nv-quote-color fa fa-quote-left" aria-hidden="true"  style="color:ff9800"></i> We have received a wonderful training from Novel Vista! The faculty Mr.Kailash is amazing and having lot of experience and taught us very well with all his practical experiences. The way he relate the subjects with real time example was really good. Your representative Akanksha also did a very good job by following up, providing information at the proper time etc as and when needed. Thanks Novel Vista for providing this wonderful opportunity to learn the things in fun way. Love to attend more trainings in future with Novel Vista. Thanks again!!! <i class="nv-quote-color fa fa-quote-right color-6" aria-hidden="true"></i></p>
-       </div>
-     </div>
-
-     <div class="col-md-4 col-sm-6">
-       <div class="services-detail">
-         <div class="date">
-        <span class="day">30</span>
-        <span class="month">Jun</span>
-        <span class="year">2017</span>
-      </div>
-         <div class="testimonial-image">
-	             <img src="images/clients/2.jpg" alt="t2">
-	        </div>
-         <h3 style="text-align:center;font-size: 1.2em;margin-bottom: 0;margin-top: 0.4em;">Parminder Mehta</h3>
-         <div class="rating">
-<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
-</div>
-         <hr  style="color:ff9800">
-         <p style="font-size: 0.8em;font-weight: 500;text-align: justify;line-height: 1.5em;"><i class="nv-quote-color fa fa-quote-left" aria-hidden="true"  style="color:ff9800"></i> I recently did my ITIL Foundation training and certification from NovelVista and I must say that I had a great learning experience. The faculty who taught us was an experienced one and he explained all the content of the course via clearing the concepts and with the help of the examples. Therefore, even though this training is a very theoretical one, the teaching methodology helped in keeping focus and learning new things. Also, the environment and infrastructure provided to conduct the training and exam was conducive to proper learning and certification <i class="nv-quote-color fa fa-quote-right color-6" aria-hidden="true"></i></p>
-       </div>
-     </div>
-
-     <div class="col-md-4 col-sm-6">
-       <div class="services-detail">
-         <div class="date">
-        <span class="day">8</span>
-        <span class="month">Jun</span>
-        <span class="year">2017</span>
-      </div>
-         <div class="testimonial-image">
-	             <img src="images/clients/3.jpg" alt="t2">
-	        </div>
-         <h3 style="text-align:center;font-size: 1.2em;margin-bottom: 0;margin-top: 0.4em;">Pankaj Choudhari</h3>
-         <div class="rating">
-<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
-</div>
-         <hr  style="color:ff9800">
-         <p style="font-size: 0.8em;font-weight: 500;text-align: justify;line-height: 1.5em;padding-bottom: 17%;"><i class="nv-quote-color fa fa-quote-left" aria-hidden="true"  style="color:ff9800"></i> Training was very fruitful. We got to know many standards that are used across the industry. Trainer was able to explain in very better way all the concepts. Just one thing would like to suggest about the training venue, the Hotel Centurion was pathetic, the tables, management and the food. The venue for our earlier training was superb and would love to attend there at Hotel Ambience. Hope to get better venue for my future training. Thanks <i class="nv-quote-color fa fa-quote-right color-6" aria-hidden="true"></i></p>
-       </div>
-     </div>
-
-
-
-           </div>
-       </div>
-   </section>
-   <!-- Services End -->
-
-
+      </section>
+      <!-- Testimonial carousel Start -->
+      <section id="services" class="services-section section-space-padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <div class="section-title">
+                     <h2 class="uppercase">What People Say About Us</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="block">
+                     <div id="clients-logo" class="owl-carousel">
+                        <div class="services-detail">
+                           <div class="date">
+                              <span class="day">1</span>
+                              <span class="month">Aug</span>
+                              <span class="year">2017</span>
+                           </div>
+                           <div class="testimonial-image">
+                              <img src="images/clients/1.jpg" alt="t2">
+                           </div>
+                           <h3 style="text-align:center;font-size: 1.2em;margin-bottom: 0;margin-top: 0.4em;">Arun Sankar</h3>
+                           <div class="rating">
+                              <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+                           </div>
+                           <hr style="color:ff9800">
+                           <p style="font-size: 0.8em;font-weight: 500;text-align: justify;line-height: 1.5em;"><i class="nv-quote-color fa fa-quote-left" aria-hidden="true"  style="color:ff9800"></i> We have received a wonderful training from Novel Vista! The faculty Mr.Kailash is amazing and having lot of experience and taught us very well with all his practical experiences. The way he relate the subjects with real time example was really good. Your representative Akanksha also did a very good job by following up, providing information at the proper time etc as and when needed. Thanks Novel Vista for providing this wonderful opportunity to learn the things in fun way. Love to attend more trainings in future with Novel Vista. Thanks again!!! <i class="nv-quote-color fa fa-quote-right color-6" aria-hidden="true"></i></p>
+                        </div>
+                        <div class="services-detail">
+                           <div class="date">
+                              <span class="day">30</span>
+                              <span class="month">Jun</span>
+                              <span class="year">2017</span>
+                           </div>
+                           <div class="testimonial-image">
+                              <img src="images/clients/2.jpg" alt="t2">
+                           </div>
+                           <h3 style="text-align:center;font-size: 1.2em;margin-bottom: 0;margin-top: 0.4em;">Parminder Mehta</h3>
+                           <div class="rating">
+                              <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+                           </div>
+                           <hr  style="color:ff9800">
+                           <p style="font-size: 0.8em;font-weight: 500;text-align: justify;line-height: 1.5em;"><i class="nv-quote-color fa fa-quote-left" aria-hidden="true"  style="color:ff9800"></i> I recently did my ITIL Foundation training and certification from NovelVista and I must say that I had a great learning experience. The faculty who taught us was an experienced one and he explained all the content of the course via clearing the concepts and with the help of the examples. Therefore, even though this training is a very theoretical one, the teaching methodology helped in keeping focus and learning new things. Also, the environment and infrastructure provided to conduct the training and exam was conducive to proper learning and certification <i class="nv-quote-color fa fa-quote-right color-6" aria-hidden="true"></i></p>
+                        </div>
+                        <div class="services-detail">
+                           <div class="date">
+                              <span class="day">8</span>
+                              <span class="month">Jun</span>
+                              <span class="year">2017</span>
+                           </div>
+                           <div class="testimonial-image">
+                              <img src="images/clients/3.jpg" alt="t2">
+                           </div>
+                           <h3 style="text-align:center;font-size: 1.2em;margin-bottom: 0;margin-top: 0.4em;">Pankaj Choudhari</h3>
+                           <div class="rating">
+                              <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+                           </div>
+                           <hr  style="color:ff9800">
+                           <p style="font-size: 0.8em;font-weight: 500;text-align: justify;line-height: 1.5em;padding-bottom: 17%;"><i class="nv-quote-color fa fa-quote-left" aria-hidden="true"  style="color:ff9800"></i> Training was very fruitful. We got to know many standards that are used across the industry. Trainer was able to explain in very better way all the concepts. Just one thing would like to suggest about the training venue, the Hotel Centurion was pathetic, the tables, management and the food. The venue for our earlier training was superb and would love to attend there at Hotel Ambience. Hope to get better venue for my future training. Thanks <i class="nv-quote-color fa fa-quote-right color-6" aria-hidden="true"></i></p>
+                        </div>
+                        <div class="services-detail">
+                           <div class="date">
+                              <span class="day">8</span>
+                              <span class="month">Jun</span>
+                              <span class="year">2017</span>
+                           </div>
+                           <div class="testimonial-image">
+                              <img src="images/clients/3.jpg" alt="t2">
+                           </div>
+                           <h3 style="text-align:center;font-size: 1.2em;margin-bottom: 0;margin-top: 0.4em;">Pankaj Choudhari</h3>
+                           <div class="rating">
+                              <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+                           </div>
+                           <hr  style="color:ff9800">
+                           <p style="font-size: 0.8em;font-weight: 500;text-align: justify;line-height: 1.5em;padding-bottom: 17%;"><i class="nv-quote-color fa fa-quote-left" aria-hidden="true"  style="color:ff9800"></i> Training was very fruitful. We got to know many standards that are used across the industry. Trainer was able to explain in very better way all the concepts. Just one thing would like to suggest about the training venue, the Hotel Centurion was pathetic, the tables, management and the food. The venue for our earlier training was superb and would love to attend there at Hotel Ambience. Hope to get better venue for my future training. Thanks <i class="nv-quote-color fa fa-quote-right color-6" aria-hidden="true"></i></p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+     <!--  Testimonial carousel end -->
       <!-- Footer Start -->
       <footer class="footer-section">
          <div class="container">
@@ -459,7 +420,7 @@ text-align: center;
       </footer>
       <!-- Footer End -->
       <!-- Back to Top Start -->
-     <a href="#" class="scroll-to-top"><i class="fa fa-angle-up"></i></a>
+      <a href="#" class="scroll-to-top"><i class="fa fa-angle-up"></i></a>
       <!-- All Javascript Plugins  -->
       <script type="text/javascript" src="js/jquery.min.js"></script>
       <script type="text/javascript" src="js/bocg.js"></script>

@@ -43,6 +43,13 @@
 		    }, 3000);
 		    e.preventDefault();
 		});
+		// Script to control capabilities carousel
+		$("#clients-logo").owlCarousel({
+			autoPlay: 3000,
+			items: 3,
+			itemsDesktop: [1199, 3],
+			itemsDesktopSmall: [979, 3],
+		});
 		/* Scroll To Top */
 				$(window).scroll(function () {
 					if ($(this).scrollTop() >= 500) {
