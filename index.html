@@ -23,6 +23,8 @@
       <link rel="stylesheet" type="text/css" href="css/main.css">
       <link rel="stylesheet" type="text/css" href="css/home.css">
       <link rel="stylesheet" type="text/css" href="css/responsive.css">
+      <link rel="stylesheet" type="text/css" href="css/nv-tabs.css">
+      <link rel="stylesheet" type="text/css" href="js/modernizr.js">
       <!-- Google Web Fonts  -->
       <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
       <!-- HTML5 shiv and Respond.js support IE8 or Older for HTML5 elements and media queries -->
@@ -140,7 +142,7 @@
         .uppercase{
           text-transform: uppercase;
         }
-        
+
 .nv-accreditations{
   font-weight: 400;
   margin: 1em;
@@ -150,6 +152,51 @@
   padding-top: 2em;
   padding-bottom: 2em;
 }
+.cd-tabs-content .nv-style-p{
+  font-size: 0.85em;
+  padding-left: 3em;
+  margin-bottom: 0;
+}
+.cd-tabs-content .fa{
+      font-size: 0.5em;
+      padding-right: 2em;
+}
+.cd-tabs-content .nv-course-content{
+  box-shadow: 0px 16px 22px 0px rgba(158, 158, 158, 0.19);
+border-bottom-right-radius: 25px;
+}
+@media (min-width:320px) and (max-width:500px) {
+  .cd-tabs-content li p {
+    font-size: 1.30rem;
+}
+.cd-tabs-content .nv-style-p {
+    font-size: 0.70em;
+    padding-left: 1em;
+}
+.section-title h2 {
+    width: 100%;
+}
+}
+@media (max-width:767px) {
+  .cd-tabs-navigation a {
+      padding-top: 30px;
+      line-height: 1.5em;
+  }
+}
+@media (max-width:500px) {
+  .cd-tabs-navigation .nv-cert-res-500{
+    padding-right: 8em;
+    padding-left: 0.5em;
+  }
+  .cd-tabs-navigation .nv-reg-res-500
+  {
+    padding-right: 8em;
+    padding-left: 1em;
+  }
+}
+
+
+
       </style>
    </head>
    <body>
@@ -182,14 +229,14 @@
                                        <div class="ripple-wrapper"></div>
                                     </a>
                                  </li>
-                                 <li><a class="smoth-scroll" href="#">Course Overview</a>
+                                 <li><a class="smoth-scroll" href="#course-overview">Course Overview</a>
                                  </li>
                                  <li><a class="smoth-scroll" href="#">Calendar</a>
                                  </li>
                                  <li><a class="smoth-scroll" href="#services">Reviews</a>
                                  </li>
-                                 <li><a class="smoth-scroll" href="#">Gallery</a>
-                                 </li>
+                                 <!-- <li><a class="smoth-scroll" href="#">Gallery</a>
+                                 </li> -->
                                  <li><a class="smoth-scroll" href="#">Contact us</a>
                                  </li>
                               </ul>
@@ -297,6 +344,110 @@
                       <img src="images/clients/PRINCE2-ATO.jpg" class="img-responsive" alt="Accredited by Axelos">
                      </div>
                   </div>
+               </div>
+            </div>
+
+      </section>
+      <!-- course overview -->
+      <section id="course-overview" class="responsive" style="padding-top: 4em;padding-bottom: 3em;">
+        <div class="container">
+              <div class="row">
+                 <div class="col-sm-12">
+                    <div class="section-title" style="padding-bottom: 2em;">
+                       <h2 class="uppercase" style="font-size:1.5em;">Course Overview</h2>
+                    </div>
+                 </div>
+              </div>
+               <div class="row">
+
+<div class="cd-tabs">
+ <nav>
+   <ul class="cd-tabs-navigation">
+     <li><a data-content="inbox" class="selected" href="#0">Course Overview</a></li>
+     <li><a data-content="new" href="#0" class="nv-cert-res-500">Certification</a></li>
+     <li><a data-content="gallery" href="#0">Benefits</a></li>
+     <li><a data-content="store" href="#0">Faculty</a></li>
+     <li><a data-content="settings" href="#0" class="nv-reg-res-500">Registration</a></li>
+   </ul> <!-- cd-tabs-navigation -->
+ </nav>
+
+ <ul class="cd-tabs-content">
+   <li data-content="inbox" class="selected nv-course-content">
+     <p>The Foundation Level is the entry level qualification which offers candidates a general awareness of the key elements, concepts and terminology used in the ITIL Service Lifecycle, including the linkages between Lifecycle stages, the processes used and their contribution to Service Management practices.</p>
+
+     <p>ITIL Foundation is an introduction to IT Service Management Lifecycle modules. The major processes and functions for all the lifecycle modules are covered. Below topics will be covered in detail:</p>
+     <p class="nv-style-p"><i class="fa fa-circle" aria-hidden="true"></i>Introduction to ITIL Concepts & Terminology - Gain a high level overview of ITIL V3.</p>
+     <p class="nv-style-p"><i class="fa fa-circle" aria-hidden="true"></i>The Service Lifecycle - Understand the fundamental ITIL lifecycle stages, processes, functions, roles & responsibilities.</p>
+     <p class="nv-style-p"><i class="fa fa-circle" aria-hidden="true"></i>Service Strategy - How to align IT strategy with business goals and expectations.</p>
+     <p class="nv-style-p"><i class="fa fa-circle" aria-hidden="true"></i>Service Design - Transform business requirements into strategic solutions.</p>
+     <p class="nv-style-p"><i class="fa fa-circle" aria-hidden="true"></i>Service Transition - Manage change, risk, and quality assurance.</p>
+     <p class="nv-style-p"><i class="fa fa-circle" aria-hidden="true"></i>Service Operation - Establish day-to-day business operations and customer expectations.</p>
+     <p class="nv-style-p"><i class="fa fa-circle" aria-hidden="true"></i>Continual Service Improvement - Strategize for overall process and service improvement.</p>
+     <p class="nv-style-p"><i class="fa fa-circle" aria-hidden="true"></i>Prepares participants to take and pass the ITIL Foundations Certification examination successfully.</p>
+
+
+   </li>
+
+   <li data-content="new" class="nv-course-content nv-res-500">
+     <p>Online Certification Exam will be conducted after the training program. See Exam Details below:</p>
+     <p class="nv-style-p"><i class="fa fa-circle" aria-hidden="true"></i>Exam Format - Objective Type, Multiple Choice</p>
+     <p class="nv-style-p"><i class="fa fa-circle" aria-hidden="true"></i>Open Book - No</p>
+     <p class="nv-style-p"><i class="fa fa-circle" aria-hidden="true"></i>No. of Questions - 40</p>
+     <p class="nv-style-p"><i class="fa fa-circle" aria-hidden="true"></i>Passing Criteria - 26 out of 40 (65%)</p>
+     <p class="nv-style-p"><i class="fa fa-circle" aria-hidden="true"></i>Result - Immediately after the exam</p>
+     <p class="nv-style-p"><i class="fa fa-circle" aria-hidden="true"></i>Certificate - After 2 business days</p>
+     <br>
+     <p>You should be able to clear the exam easily with good score because:</p>
+     <p class="nv-style-p"><i class="fa fa-circle" aria-hidden="true"></i>You will get excellent training from the expert trainers</p>
+     <p class="nv-style-p"><i class="fa fa-circle" aria-hidden="true"></i>Lot of sample questions will be discussed on each topic throughout the training session</p>
+     <p class="nv-style-p"><i class="fa fa-circle" aria-hidden="true"></i>Exam preparation session will be there before the actual exam</p>
+     <p class="nv-style-p"><i class="fa fa-circle" aria-hidden="true"></i>You can expect many questions from the ones which will be discussed during training)</p>
+   </li>
+
+   <li data-content="gallery" class="nv-course-content">
+     <p>ITIL is world's most widely used Service Management Framework. There are numerous benefits of ITIL learning and certification to individual as well as organization. Some of them are as below:</p>
+     <p class="nv-style-p"><i class="fa fa-circle" aria-hidden="true"></i>Improved customer satisfaction through a more professional approach to service delivery</p>
+     <p class="nv-style-p"><i class="fa fa-circle" aria-hidden="true"></i>Improved IT services through the use of proven best practice processes</p>
+     <p class="nv-style-p"><i class="fa fa-circle" aria-hidden="true"></i>Improved ROI of IT</p>
+     <p class="nv-style-p"><i class="fa fa-circle" aria-hidden="true"></i>Improved delivery of third party services through the specification of ITIL</p>
+     <p class="nv-style-p"><i class="fa fa-circle" aria-hidden="true"></i>Improved morale of service delivery and recipient staff</p>
+     <p class="nv-style-p"><i class="fa fa-circle" aria-hidden="true"></i>Increased staff retention</p>
+     <p class="nv-style-p"><i class="fa fa-circle" aria-hidden="true"></i>Reduced cost of training via knowledge management</p>
+     <p class="nv-style-p"><i class="fa fa-circle" aria-hidden="true"></i>Improved systems/ applications availability</p>
+     <p class="nv-style-p"><i class="fa fa-circle" aria-hidden="true"></i>Reduced cost/ incident</p><p class="nv-style-p"><i class="fa fa-circle" aria-hidden="true"></i>Managing the IT Costs via Financial and Demand Management</p><p class="nv-style-p"><i class="fa fa-circle" aria-hidden="true"></i>Better asset utilization and Greater visibility of IT assets</p>
+   </li>
+
+   <li data-content="store" class="nv-course-content">
+     <p>ITIL Foundation training will be delivered by Accredited Trainer using Accredited Training Material.</p>
+
+     <p>Trainer for this batch is highly experienced professional with 12+ years of industry experience. He is working in one of the top MNC as an ITIL consultant and delivering training as a freelance consultanct with NovelVista.</p>
+     <p>He is delivering training for more than 6 years and trained more than 5000 professionals. His core expertise includes:</p>
+     <p class="nv-style-p"><i class="fa fa-circle" aria-hidden="true"></i>ITIL Consulting & Implementation</p>
+     <p class="nv-style-p"><i class="fa fa-circle" aria-hidden="true"></i>GAP Analysis, ISO Audits</p>
+     <p class="nv-style-p"><i class="fa fa-circle" aria-hidden="true"></i>Process/Service Improvement Using Lean Six Sigma</p>
+     <p class="nv-style-p"><i class="fa fa-circle" aria-hidden="true"></i>Process Definition, Implementation & Compliance</p>
+     <p class="nv-style-p"><i class="fa fa-circle" aria-hidden="true"></i>Process Hygiene (ISO 20000)</p>
+     <p class="nv-style-p"><i class="fa fa-circle" aria-hidden="true"></i>Quality Assurance & Program Governance</p>
+     <br>
+     <p>Professional Achievements:</p>
+     <p class="nv-style-p"><i class="fa fa-circle" aria-hidden="true"></i>Certified ITIL v2 Master</p>
+     <p class="nv-style-p"><i class="fa fa-circle" aria-hidden="true"></i>ITIL v3 Expert</p>
+     <p class="nv-style-p"><i class="fa fa-circle" aria-hidden="true"></i>Axelos Accredited Trainer</p>
+     <p class="nv-style-p"><i class="fa fa-circle" aria-hidden="true"></i>PRINCE2 Practitioner</p>
+    <p class="nv-style-p"><i class="fa fa-circle" aria-hidden="true"></i>PMP Certified</p>
+    <p class="nv-style-p"><i class="fa fa-circle" aria-hidden="true"></i>Lean Six Sigma Black Belt</p>
+   </li>
+
+   <li data-content="settings" class="nv-course-content">
+     <p>You can register yourself by paying only Rs 1000 as a confirmation payment. Please make the confirmation payment by clicking Register link from menu.</p>
+
+     <p>Balance amount can be paid after passing the examination. We accept payment by Cash, Cheque, Netbanking, Cards..</p>
+   </li>
+
+
+ </ul> <!-- cd-tabs-content -->
+</div> <!-- cd-tabs -->
+
                </div>
             </div>
 
@@ -418,5 +569,6 @@
       <script type="text/javascript" src="js/bocg.js"></script>
       <!-- Main Javascript File  -->
       <script type="text/javascript" src="js/home.js"></script>
+      <script type="text/javascript" src="js/nv-tabs.js"></script>
    </body>
 </html>
