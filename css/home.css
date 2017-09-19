@@ -38,10 +38,6 @@ h5 {
 a {
 	text-decoration: none;
 }
-/*nv-removed*/
-/*img {
-	width: 100%;
-}*/
 
 a:hover {
 	color: #777;
@@ -52,23 +48,53 @@ a:focus {
 	outline: none;
 	text-decoration: none;
 }
-/*nv-overwrite*/
-/*p {
-	line-height: 32px;
-}*/
-
 ul,
 li {
 	margin: 0;
 	padding: 0;
 }
-/*nv-overwrite home.css*/
+
 ul, li {
 display: block;
 }
 .active {
 	height: 100%;
 }
+#accreditations {
+  background-color: #fbfafa;
+  background-repeat: repeat-x;
+  height: 157px;
+  background-position: center;
+  display: table;
+  position: static;
+  width: 100%;
+	position: relative;
+}
+.panel-group{
+  border: 1px solid #eee;
+}
+.panel-default{
+  border: 0;
+}
+.panel-group .panel{
+  border-radius: 0;
+}
+.panel-group .panel+.panel{
+  margin-top: 0;
+}
+
+.panel-default>.panel-heading{
+  background-color: transparent;
+  border-top: 1px solid #eee;
+}
+
+.panel-group .panel-default:first-child>.panel-heading{
+  border-top: 0;
+}
+
+.padding-top{
+    padding-top: 90px;
+  }
 /*header styles*/
 .header-top-area {
 	position: fixed;
@@ -403,12 +429,4 @@ color: #08a6f3;
 	color: #ffffff;
 }
 /*Social header*/
-/* CENTERING */
-@mixin vertical-align($position: relative) {
-	position: $position;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
-}
 /* /end */
