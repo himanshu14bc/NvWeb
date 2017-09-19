@@ -24,7 +24,7 @@
       <link rel="stylesheet" type="text/css" href="css/home.css">
       <link rel="stylesheet" type="text/css" href="css/responsive.css">
       <link rel="stylesheet" type="text/css" href="css/nv-tabs.css">
-      <link rel="stylesheet" type="text/css" href="js/modernizr.js">
+      <link rel="stylesheet" type="text/javascript" href="js/modernizr.js">
       <!-- Google Web Fonts  -->
       <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
       <!-- HTML5 shiv and Respond.js support IE8 or Older for HTML5 elements and media queries -->
@@ -74,7 +74,7 @@
          top: 0px;
          padding: 1em;
          margin-top: 32px;
-         min-height: 495px;
+         min-height: 696px;
          margin-right: 0.95em;
          margin-bottom: 1em;
          }
@@ -165,7 +165,96 @@
   box-shadow: 0px 16px 22px 0px rgba(158, 158, 158, 0.19);
 border-bottom-right-radius: 25px;
 }
-@media (min-width:320px) and (max-width:500px) {
+.nv-tm-nm{
+  text-align:center;font-size: 1.2em;margin-bottom: 0;margin-top: 0.4em;
+}
+
+.nv-schedule-pd{
+  padding-top: 8em;
+}
+
+.divide15 {
+    width: 100%;
+    height: 15px;
+}
+.nv-call-col{
+  color:#325c80;
+  padding-right: 0.5em;
+}
+.highlight-list-call li {
+    font-weight: 600;
+    font-size: 18px;
+}
+.highlight-list-call li a{
+    font-weight: 600;
+    font-size: 18px;
+    color:#333;
+}
+.highlight-list-call li a:hover{
+    color:#325c80;
+}
+
+#clients-carousel{
+    background-color: #fff;
+    padding: 40px 0;
+}
+#clients-carousel .center-heading h2{
+    color:#000;
+    color: #000;
+font-weight: 400;
+font-size: 1.5em;
+margin: 0 auto;
+border-left: 3px solid #2196F3;
+border-right: 3px solid #2196F3;
+width: 42%;
+text-align: center;
+}
+#clients-carousel .item{
+    text-align: center;
+}
+.nv-lead{
+    text-align: center;
+    padding: 1em 0;
+    font-size: 1.2em;
+    color: #777;
+}
+:focus{
+    outline: none;
+}
+.form-control{
+  font-size: 12px;
+}
+body.modal-open {
+  overflow: inherit;
+  padding-right: 0 !important;
+}
+.panel-group {
+    border: none;
+}
+.panel-group .panel-heading {
+        padding-top: 1em;
+}
+.nv-schedule{
+  box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+
+.panel-group .panel {
+    border-radius: none;
+}
+.nv-schedule-top{
+  border-top-left-radius: 12px !important;
+  border-top-right-radius: 12px !important;
+  box-shadow: 0 5px 15px rgba(0,0,0,.5)
+}
+.nv-schedule-btm{
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+.nv-schedule-sdw{
+  box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+@media only screen and (min-width:320px) and (max-width:568px) {
   .cd-tabs-content li p {
     font-size: 1.30rem;
 }
@@ -175,15 +264,21 @@ border-bottom-right-radius: 25px;
 }
 .section-title h2 {
     width: 100%;
+    font-size: 1.25em;
 }
+.nv-tm-nm{
+  font-size: 0.9em;
 }
-@media (max-width:767px) {
-  .cd-tabs-navigation a {
-      padding-top: 30px;
-      line-height: 1.5em;
+#clients-carousel .center-heading h2{
+  width: 86%;
+  font-size: 1.25em;
+  }
+  .nv-lead {
+    font-size: 1.0em;
   }
 }
-@media (max-width:500px) {
+
+@media only screen and  (max-width:568px) {
   .cd-tabs-navigation .nv-cert-res-500{
     padding-right: 8em;
     padding-left: 0.5em;
@@ -193,11 +288,43 @@ border-bottom-right-radius: 25px;
     padding-right: 8em;
     padding-left: 1em;
   }
+  .panel-title{
+    font-size: 11px;
+    font-weight: 600;
+  }
+  .nv-schedule-pd{
+    padding-top: 3em;
+  }
+
+}
+@media  only screen and (max-width:767px) {
+  .cd-tabs-navigation a {
+      padding-top: 30px;
+      line-height: 1.5em;
+  }
+  .services-section .services-detail {
+    min-height: 696px;
+  }
+}
+@media  only screen and (min-width:768px) {
+  .services-section .services-detail {
+    min-height: 552px;
+  }
+}
+@media  only screen and (min-width:411px) and (max-width:450px) and (orientation:portrait){
+  .img-responsive {
+      min-width: 100%;
+  }
 }
 
+@media  only screen and (min-width:768px) and (max-width:1023px){
+  .nv-schedule-pos-768{
+    width:50%;
+    left:25%;
+  }
+}
 
-
-      </style>
+</style>
    </head>
    <body>
       <!--Section Start -->
@@ -231,13 +358,13 @@ border-bottom-right-radius: 25px;
                                  </li>
                                  <li><a class="smoth-scroll" href="#course-overview">Course Overview</a>
                                  </li>
-                                 <li><a class="smoth-scroll" href="#">Calendar</a>
+                                 <li><a class="smoth-scroll" href="#schedule">Schedule</a>
                                  </li>
                                  <li><a class="smoth-scroll" href="#services">Reviews</a>
                                  </li>
                                  <!-- <li><a class="smoth-scroll" href="#">Gallery</a>
                                  </li> -->
-                                 <li><a class="smoth-scroll" href="#">Contact us</a>
+                                 <li><a class="smoth-scroll" data-toggle="modal" data-target="#callNowCTAModal" href="#">Contact us</a>
                                  </li>
                               </ul>
                            </div>
@@ -269,13 +396,14 @@ border-bottom-right-radius: 25px;
                      </ul>
                   </div>
                   <div class="live-preview" style="padding-top: 2em;">
-                     <a href="#" class="btn btn-common">Call Us Now</a>
+                     <a data-toggle="modal" data-target="#callNowCTAModal" class="btn btn-common">Call Us Now</a>
                   </div>
                </div>
                <div class="col-sm-5">
                   <img src="images/Banner/leadspace-watson.jpg" class="img-responsive" alt="">
                </div>
             </div>
+
             <!-- statistics -->
             <div class="row">
                <div class="statistics-center" style="padding-top: 2em;">
@@ -323,6 +451,7 @@ border-bottom-right-radius: 25px;
             </div>
          </div>
       </section>
+
       <section id="action" class="responsive" style="padding-top: 4em;padding-bottom: 3em;">
         <div class="container">
               <div class="row">
@@ -452,6 +581,147 @@ border-bottom-right-radius: 25px;
             </div>
 
       </section>
+      <section id="schedule" class="services-section section-space-padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <div class="section-title">
+                     <h2 class="uppercase">Course Schedule</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-6 "style="padding: 2em;">
+                 <form role="form" action="http://lms.tugbiz.com/sendEnquiryEmail" id="enq_main_form" method="post">
+                 <div class="modal-content">
+                   <div class="modal-header">
+                   <h3 class="modal-title">I Am Interested</h3>
+                   </div>
+                   <div class="modal-body">
+                     <div class="form-group">
+                       <div class="input-group">
+                         <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                         <input type="text" required name="fname" class="form-control" placeholder="Name">
+                       </div>
+                       <div class="divide15"></div>
+                       <div class="input-group">
+                         <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                         <input type="number" name="mobile" required class="form-control" placeholder="Mobile Number">
+                       </div>
+                       <div class="divide15"></div>
+                       <div class="input-group">
+                         <span class="input-group-addon"><i class="fa fa-envelope-o"></i></span>
+                         <input type="email" required name="email" class="form-control" placeholder="Email Address">
+                         <input type="hidden" name="redirectURL" value="http://www.novelvista.com/itil-bangalore-enquiry-response.jsp" />
+                         <input type="hidden" name="location" value="Bangalore"/>
+                         <input type="hidden" name="course" value="ITIL Foundation"/>
+                         <input type="hidden" name="source" value="Google Adwords"/>
+                         <input type="hidden" name="campaign" value="ITILF-Bangalore-Nov-Dec-2016"/>
+                         <input type="hidden" name="enquiryChannel" value="Enquiry Form - I Am Interested"/>
+                       </div>
+                       <div class="divide15"></div>
+                       <div class="input-group">
+                         <span class="input-group-addon"><i class="fa fa-book"></i></span>
+                         <input type="text" required name="companyName" class="form-control" placeholder="Company Name">
+                       </div>
+                       <div class="divide15"></div>
+                       <div class="input-group">
+                         <span class="input-group-addon"><i class="fa fa-comment"></i></span>
+                         <textarea class="form-control" name="comments" rows="2" placeholder="Comments (Optional)"></textarea>
+                       </div>
+                     </div>
+                   </div>
+                   <div class="modal-footer" style="text-align:center;padding-left:8px;">
+                   <button type="submit" class="btn btn-primary">Request A Callback</button>
+                   </div>
+                 </div>
+                 </form>
+               </div>
+               <div class="col-md-5  panel-group nv-schedule-pd nv-schedule-pos-768" id="accordion">
+                 <div class="abc">
+                   <div class="panel panel-default nv-schedule-top">
+                       <div class="panel-heading">
+                           <h4 class="panel-title">
+                               <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                   <i class="fa fa-calendar-check-o" aria-hidden="true" style="padding-right:0.5em;
+"></i>Schedule:
+               <span class="pull-right">Every Weekend</span>
+                               </a>
+                           </h4>
+                       </div>
+                   </div>
+                   <div class="panel panel-default nv-schedule-sdw">
+                       <div class="panel-heading">
+                           <h4 class="panel-title">
+                               <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                   <i class="fa fa-map-marker" aria-hidden="true" style="padding-right:0.5em;
+"></i></i>Venue:
+               <span class="pull-right">Koramangala</span>
+                               </a>
+                           </h4>
+                       </div>
+                   </div>
+                   <div class="panel panel-default nv-schedule-sdw">
+                       <div class="panel-heading">
+                           <h4 class="panel-title">
+                               <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                                   <i class="fa fa-inr" aria-hidden="true" style="
+    padding-right: 0.5em;
+"></i>Total Cost:
+               <span class="pull-right">Rs 16,500</span>
+                               </a>
+                           </h4>
+                       </div>
+                   </div>
+
+                   <div class="panel panel-default nv-schedule-sdw">
+                       <div class="panel-heading">
+                           <h4 class="panel-title">
+                               <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                                   <i class="fa fa-percent" aria-hidden="true" style="
+    padding-right: 0.5em;
+"></i>Discount:
+                <span class="pull-right">Upto 15%</span>
+                               </a>
+                           </h4>
+                       </div>
+                   </div>
+                   <div class="panel panel-default nv-schedule-sdw">
+                       <div class="panel-heading">
+                           <h4 class="panel-title">
+                               <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                                   <i class="fa fa-smile-o" style="
+    padding-right: 0.5em;
+"></i>Taxes:
+               <span class="pull-right">Included</span>
+                               </a>
+                           </h4>
+                       </div>
+                   </div>
+                   <div class="panel panel-default">
+                       <div class="panel-heading nv-schedule-btm">
+                           <h4 class="panel-title">
+                               <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                                   <i class="fa fa-pencil-square-o" aria-hidden="true" style="padding-right:0.5em;
+"></i>Terms:
+                   <span class="pull-right">Pay After You Pass</span>
+                               </a>
+                           </h4>
+                       </div>
+                   </div>
+
+                 </div>
+
+
+
+
+
+
+               </div>
+
+            </div>
+         </div>
+      </section>
       <!-- Testimonial carousel Start -->
       <section id="services" class="services-section section-space-padding">
          <div class="container">
@@ -475,14 +745,14 @@ border-bottom-right-radius: 25px;
                            <div class="testimonial-image">
                               <img src="images/clients/1.jpg" alt="t2">
                            </div>
-                           <h3 style="text-align:center;font-size: 1.2em;margin-bottom: 0;margin-top: 0.4em;">Arun Sankar</h3>
+                           <h3 class="nv-tm-nm">Arun Sankar</h3>
                            <div class="rating">
                               <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
                            </div>
                            <hr style="color:ff9800">
                            <p style="font-size: 0.8em;font-weight: 500;text-align: justify;line-height: 1.5em;"><i class="nv-quote-color fa fa-quote-left" aria-hidden="true"  style="color:ff9800"></i> We have received a wonderful training from Novel Vista! The faculty Mr.Kailash is amazing and having lot of experience and taught us very well with all his practical experiences. The way he relate the subjects with real time example was really good. Your representative Akanksha also did a very good job by following up, providing information at the proper time etc as and when needed. Thanks Novel Vista for providing this wonderful opportunity to learn the things in fun way. Love to attend more trainings in future with Novel Vista. Thanks again!!! <i class="nv-quote-color fa fa-quote-right color-6" aria-hidden="true"></i></p>
                         </div>
-                        <div class="services-detail">
+                        <div class="services-detail" style="margin-left: 0.095em;">
                            <div class="date">
                               <span class="day">30</span>
                               <span class="month">Jun</span>
@@ -491,14 +761,14 @@ border-bottom-right-radius: 25px;
                            <div class="testimonial-image">
                               <img src="images/clients/2.jpg" alt="t2">
                            </div>
-                           <h3 style="text-align:center;font-size: 1.2em;margin-bottom: 0;margin-top: 0.4em;">Parminder Mehta</h3>
+                           <h3 class="nv-tm-nm">Parminder Mehta</h3>
                            <div class="rating">
                               <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
                            </div>
                            <hr  style="color:ff9800">
                            <p style="font-size: 0.8em;font-weight: 500;text-align: justify;line-height: 1.5em;"><i class="nv-quote-color fa fa-quote-left" aria-hidden="true"  style="color:ff9800"></i> I recently did my ITIL Foundation training and certification from NovelVista and I must say that I had a great learning experience. The faculty who taught us was an experienced one and he explained all the content of the course via clearing the concepts and with the help of the examples. Therefore, even though this training is a very theoretical one, the teaching methodology helped in keeping focus and learning new things. Also, the environment and infrastructure provided to conduct the training and exam was conducive to proper learning and certification <i class="nv-quote-color fa fa-quote-right color-6" aria-hidden="true"></i></p>
                         </div>
-                        <div class="services-detail">
+                        <div class="services-detail" style="margin-left: 0.095em;">
                            <div class="date">
                               <span class="day">8</span>
                               <span class="month">Jun</span>
@@ -507,14 +777,14 @@ border-bottom-right-radius: 25px;
                            <div class="testimonial-image">
                               <img src="images/clients/3.jpg" alt="t2">
                            </div>
-                           <h3 style="text-align:center;font-size: 1.2em;margin-bottom: 0;margin-top: 0.4em;">Pankaj Choudhari</h3>
+                           <h3 class="nv-tm-nm">Pankaj Choudhari</h3>
                            <div class="rating">
                               <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
                            </div>
                            <hr  style="color:ff9800">
                            <p style="font-size: 0.8em;font-weight: 500;text-align: justify;line-height: 1.5em;padding-bottom: 17%;"><i class="nv-quote-color fa fa-quote-left" aria-hidden="true"  style="color:ff9800"></i> Training was very fruitful. We got to know many standards that are used across the industry. Trainer was able to explain in very better way all the concepts. Just one thing would like to suggest about the training venue, the Hotel Centurion was pathetic, the tables, management and the food. The venue for our earlier training was superb and would love to attend there at Hotel Ambience. Hope to get better venue for my future training. Thanks <i class="nv-quote-color fa fa-quote-right color-6" aria-hidden="true"></i></p>
                         </div>
-                        <div class="services-detail">
+                        <div class="services-detail" style="margin-left: 0.095em;">
                            <div class="date">
                               <span class="day">8</span>
                               <span class="month">Jun</span>
@@ -523,7 +793,7 @@ border-bottom-right-radius: 25px;
                            <div class="testimonial-image">
                               <img src="images/clients/3.jpg" alt="t2">
                            </div>
-                           <h3 style="text-align:center;font-size: 1.2em;margin-bottom: 0;margin-top: 0.4em;">Pankaj Choudhari</h3>
+                           <h3 class="nv-tm-nm">Pankaj Choudhari</h3>
                            <div class="rating">
                               <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
                            </div>
@@ -536,6 +806,34 @@ border-bottom-right-radius: 25px;
             </div>
          </div>
       </section>
+      <div class="divide60"></div>
+		<section id="clients-carousel">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="center-heading">
+                            <h2 class="uppercase">Participants From</h2>
+                            <span class="center-line"></span>
+                            <p class="lead nv-lead">
+                                NovelVista has trained and certified professionals from all major organizations. Some of them are..
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--center heading row-->
+                <div id="clients-slider">
+                    <div class="item"><a href="#"><img src="images/clients/sungard.jpg" alt=""></a></div>
+					<div class="item"><a href="#"><img src="images/clients/cts.jpg" alt=""></a></div>
+					<div class="item"><a href="#"><img src="images/clients/atos.jpg" alt=""></a></div>
+					<div class="item"><a href="#"><img src="images/clients/accenture.jpg" alt=""></a></div>
+					<div class="item"><a href="#"><img src="images/clients/hp.jpg" alt=""></a></div>
+					<div class="item"><a href="#"><img src="images/clients/infy.jpg" alt=""></a></div>
+					<div class="item"><a href="#"><img src="images/clients/syntel.jpg" alt=""></a></div>
+					<div class="item"><a href="#"><img src="images/clients/techm.jpg" alt=""></a></div>
+                </div>
+            </div>
+        </section><!--clients carousel end-->
+
      <!--  Testimonial carousel end -->
       <!-- Footer Start -->
       <footer class="footer-section">
@@ -562,6 +860,65 @@ border-bottom-right-radius: 25px;
          </div>
       </footer>
       <!-- Footer End -->
+	   <!-- Start: Call Now CTA -->
+      <div class="modal fade" id="callNowCTAModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="top:10%">
+        <div class="modal-dialog">
+        <form role="form" action="http://lms.tugbiz.com/sendEnquiryEmail" id="enq_main_form" method="post">
+        <div class="modal-content">
+          <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <div class="highlight-list-call">
+            <ul class="list-unstyled" style="margin-bottom: 0px;">
+              <li><i class="fa fa-check nv-call-col"></i>Call Now: <a href="tel:+917219014011">+91 721 901 4011</a></li>
+            </ul>
+          </div>
+          </div>
+          <div class="modal-body">
+          <div>
+          <h4>Request A Callback<br></h4>
+          <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                <input type="text" required name="fname" class="form-control" placeholder="Name">
+              </div>
+              <div class="divide15"></div>
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                <input type="number" name="mobile" required class="form-control" placeholder="Mobile Number">
+              </div>
+              <div class="divide15"></div>
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-envelope-o"></i></span>
+                <input type="email" required name="email" class="form-control" placeholder="Email Address">
+                <input type="hidden" name="redirectURL" value="http://www.novelvista.com/itil-bangalore-enquiry-response.jsp" />
+                <input type="hidden" name="enquiryChannel" value="Call Now - Request Callback" />
+                <input type="hidden" name="location" value="Bangalore"/>
+                <input type="hidden" name="course" value="ITIL Foundation"/>
+                <input type="hidden" name="source" value="Google Adwords"/>
+                <input type="hidden" name="campaign" value="ITILF-Bangalore-Nov-Dec-2016"/>
+              </div>
+              <div class="divide15"></div>
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-book"></i></span>
+                <input type="text" name="companyName" required class="form-control" placeholder="Company Name">
+              </div>
+              <div class="divide15"></div>
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-comment"></i></span>
+                <textarea class="form-control" name="comments" rows="2" placeholder="Comments (Optional)"></textarea>
+              </div>
+            </div>
+            <!-- * Your personal information is protected by our Privacy Policy -->
+          </div>
+        </div>
+          <div class="modal-footer" style="text-align:center;letter-spacing:1px;">
+          <button type="submit"style="letter-spacing:1px;" class="btn btn-primary uppercase">Request Callback</button>
+          </div>
+        </div>
+      </form>
+      </div>
+      </div>
+      <!-- End: Call Now CTA -->
       <!-- Back to Top Start -->
       <a href="#" class="scroll-to-top"><i class="fa fa-angle-up"></i></a>
       <!-- All Javascript Plugins  -->
@@ -570,5 +927,7 @@ border-bottom-right-radius: 25px;
       <!-- Main Javascript File  -->
       <script type="text/javascript" src="js/home.js"></script>
       <script type="text/javascript" src="js/nv-tabs.js"></script>
+
+
    </body>
 </html>

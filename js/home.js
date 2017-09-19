@@ -50,6 +50,13 @@
 			itemsDesktop: [1199, 3],
 			itemsDesktopSmall: [979, 3],
 		});
+		$("#clients-slider").owlCarousel({
+    autoPlay: 3000,
+    pagination: true,
+    items: 5,
+    itemsDesktop: [1199, 3],
+    itemsDesktopSmall: [991, 2]
+});
 		/* Scroll To Top */
 				$(window).scroll(function () {
 					if ($(this).scrollTop() >= 500) {

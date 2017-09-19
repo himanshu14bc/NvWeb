@@ -21,12 +21,12 @@ body {
 
 ::selection {
 	background-color: #ffffff;
-	color: #ffffff;
+	color: #3297fd;
 }
 
 ::-moz-selection {
 	background-color: #ffffff;
-	color: #ffffff;
+	color: #3297fd;
 }
 
 h1,
@@ -38,13 +38,13 @@ h5 {
 a {
 	text-decoration: none;
 }
-
-img {
+/*nv-removed*/
+/*img {
 	width: 100%;
-}
+}*/
 
 a:hover {
-	color: #fff;
+	color: #777;
 	text-decoration: none;
 }
 
